@@ -233,3 +233,69 @@
 
 }
 
+/* Welcome Section */
+
+.welcome-container{
+    display: flex;
+}
+
+.welcome-wrapper{
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.welcome-header-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-header{
+    font-family: 'Alegreya', serif;
+    font-size: 2.3rem;
+}
+
+.welcome-writing{
+    width: 40rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.welcome-apparel-wrapper{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.welcome-apparel-item-wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 25vh;
+    width: 25vw;
+}
+
+.one{
+    background: url("./Assets/Banners/banner1-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.two{
+    background: url("./Assets/Banners/banner2-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-apparel-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 5px 10px black;
+    margin-bottom: 2rem;
+}
