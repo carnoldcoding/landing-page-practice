@@ -28,7 +28,10 @@
 
 .nav-item{
     transition: all .2s ease;
+    text-decoration: none;
+    color: black;
 }
+
 .nav-item:hover{
     cursor: pointer;
     transform: scale(1.1);
