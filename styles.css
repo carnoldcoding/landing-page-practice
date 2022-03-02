@@ -354,3 +354,36 @@
     background-image: url("./Assets/Featured/item4-img.jpg");
 
 }
+
+/* Footer Section */
+
+.footer-container{
+    display: flex;
+    margin-top: 10vh;
+    height: 13vh;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    background: url("./Assets/Art-Images/footer-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(54, 54, 54);
+
+    color: white;
+}
+
+.footer-copyright-wrapper{
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+}
+
+.footer-links-wrapper{
+    display: flex;
+    flex: 1 1 50%;
+    gap: 2rem;
+}
