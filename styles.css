@@ -7,6 +7,7 @@
     padding: 0px;
 }
 
+/* Nav Section */
 .nav-container{
     display: flex;
     height: 6vh;
@@ -64,4 +65,96 @@
 .nav-cart-text-wrapper{
     display: flex;
     gap: 1rem;
+}
+
+/* Product Bar Section */
+.pbar-container{
+    height: 8vw;
+    background: white;
+    box-shadow: inset 0px -1px 2px .5px rgb(209, 209, 209);
+    display: flex;
+}
+
+.pbar-wrapper{
+    display: flex;
+    flex: 1 1 100%;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 15vw;
+}
+
+.pbar-brand-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 50%;
+    height: 10rem;
+}
+
+.pbar-items-wrapper{
+    display: flex;
+    gap: 5vw;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex: 1 1 25%;
+}
+
+.pbar-dropdown-content{
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    padding: 1rem;
+    padding-right: 5rem;
+}
+
+.pbar-dropdown-item{
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+
+.pbar-dropdown-title-wrapper{
+    display: flex;
+    gap: .5rem;
+}
+
+.pbar-dropdown-title-icon-wrapper{
+    display: flex;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.pbar-dropdown-title-icon{
+    background: url("./Assets/Icons/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex: 1 1 100%;
+}
+
+.pbar-dropdown-title-wrapper:hover + .pbar-dropdown-content{
+    display: flex;
+}
+
+.pbar-dropdown-content:hover{
+    display: flex;
+}
+
+.pbar-item:hover{
+    cursor: pointer;
+}
+
+.pbar-dropdown-title:hover{
+    cursor: pointer;
+    color: rgb(66, 151, 204);
+
+}
+
+.pbar-link{
+    text-decoration: underline;
+    color: rgb(66, 151, 204);
 }
