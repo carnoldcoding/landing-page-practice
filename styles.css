@@ -93,9 +93,9 @@
 
 .pbar-items-wrapper{
     display: flex;
-    gap: 5vw;
+    gap: 4vw;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     flex: 1 1 25%;
 }
 
@@ -157,4 +157,28 @@
 .pbar-link{
     text-decoration: underline;
     color: rgb(66, 151, 204);
+}
+
+.pbar-search-wrapper{
+    display: flex;
+    border: 1px solid black;
+    padding: .7rem;
+    margin-left: 5rem;
+    gap: .5rem;
+}
+
+.pbar-searchbar{
+    outline: none;
+    border: none;
+    width: 15rem;
+    font-size: 1.1rem;
+}
+
+.pbar-search-icon{
+    background: url("./Assets/Icons/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1.5rem;
+    width: 1.5rem;
 }
