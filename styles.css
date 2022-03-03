@@ -85,14 +85,6 @@
     margin: 0 15vw;
 }
 
-.pbar-brand-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1 1 50%;
-    height: 10rem;
-}
-
 .pbar-items-wrapper{
     display: flex;
     gap: 4vw;
@@ -187,6 +179,75 @@
     background-size: contain;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.pbar-brand-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pbar-brand-icons-wrapper{
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.pbar-brand-icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    opacity: 0;
+}
+
+.icon-1{
+    background-image: url("./Assets/Art-Images/logo-1.svg");
+    animation: rollIn 1s ease forwards 1.5s;
+}
+
+.icon-2{
+    background-image: url("./Assets/Art-Images/logo-2.svg");
+    animation: rollIn 1s ease forwards .75s;
+}
+
+.icon-3{
+    background-image: url("./Assets/Art-Images/logo-3.svg");
+    animation: rollIn 1s ease forwards;
+}
+
+@keyframes rollIn {
+    0%{
+        transform: translateX(-20vw);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.pbar-brand-subtitle-wrapper{
+    padding-top: .5rem;
+    animation: fadeIn 1s ease forwards 2.25s;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
+}
+.pbar-brand-subtitle{
+    background-image: url("./Assets/Art-Images/logo-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1rem;
+    width: 14rem;
 }
 
 /* Hero Section */
