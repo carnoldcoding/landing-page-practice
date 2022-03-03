@@ -19,6 +19,8 @@
     flex: 1 1 100%;
     gap: 5vw;
     justify-content: center;
+    margin-left: 22rem;
+    
 }
 
 .nav-item-wrapper{
@@ -41,7 +43,7 @@
 .nav-cart-wrapper{
     display: flex;
     gap: .2rem;
-    align-items: center;   
+    align-items: center;
 
     background: white;
     margin: .6vh 0;
@@ -142,6 +144,10 @@
 
 .pbar-dropdown-content:hover{
     display: flex;
+}
+
+.contact{
+    min-width: 8em;
 }
 
 .pbar-item:hover{
