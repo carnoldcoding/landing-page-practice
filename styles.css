@@ -506,3 +506,11 @@
     flex: 1 1 50%;
     gap: 2rem;
 }
+
+.footer-link{
+    transition: all .2s ease;
+}
+.footer-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
