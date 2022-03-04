@@ -317,6 +317,19 @@
 }
 
 .hero-icon-banner{
+    animation: fadeGrow 1s forwards;
+    opacity: 0;
+    transform: scale(.8);
+}
+
+@keyframes fadeGrow {
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero-icon-banner{
     height: 7rem;
     width: 20rem;
     background: url('./Assets/Art-Images/spot-logomark.svg');
