@@ -81,8 +81,29 @@
     display: none;
 }
 
+
 .checkbox:checked + .pbar-dropdown-menu{
     display: flex;
+    animation: dropDown .5s forwards;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.checkbox:checked + .pbar-dropdown-menu .pbar-dropdown-item{
+    opacity: 0;
+    animation: fadeIn .5s forwards .5s;
+}
+
+@keyframes dropDown {
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
 }
 
 .pbar-dropdown-menu{
@@ -95,6 +116,7 @@
     padding: 1rem;
     padding-right: 4rem;
     gap: 1rem;
+    z-index: 99;
 }
 
 .pbar-dropdown-item{
